@@ -31,6 +31,9 @@ class GetLogin extends UseCase<DataToken, Params> {
       return Left(PasswordRequiredFailure());
     }
 
-    return repository.realizaLogin(params.userName, params.password);
+    return repository.realizaLogin(
+      userName: params.userName,
+      password: params.password,
+    );
   }
 }

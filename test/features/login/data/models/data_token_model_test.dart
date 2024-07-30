@@ -6,7 +6,11 @@ import 'package:reserva_salao/features/login/data/models/data_token_model.dart';
 import '../../../../fixtures/fixture_reader.dart';
 
 main() {
-  const dataTokenModel = DataTokenModel(token: "token", refreshToken: "refreshToken");
+  const dataTokenModel = DataTokenModel(
+    token: "token",
+    nome: "nome",
+    email: "email",
+  );
 
   group('fromJson', () {
     test("deve retorna um DataTokenModel valido", () async {
