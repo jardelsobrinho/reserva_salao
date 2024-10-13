@@ -3,6 +3,10 @@ abstract class Failure implements Exception {
   Failure({required this.message});
 }
 
-class DataSourceFailure extends Failure {
-  DataSourceFailure({required super.message});
+class RepositoryFailure extends Failure {
+  RepositoryFailure({required super.message});
+}
+
+class DatasourceFailure extends Failure {
+  DatasourceFailure({required super.message});
 }

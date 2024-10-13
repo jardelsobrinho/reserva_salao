@@ -1,0 +1,9 @@
+{
+    "isSuccess": true,
+    "isFailure": false,
+    "error": null,
+    "value": {
+        "nome": "Jardel Sobrinho",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImphcmRlbHNvYnJpbmhvQGdtYWlsLmNvbSIsImV4cCI6MTcyNDM3MDY5OCwiaXNzIjoiQ3Vyc29GbHV0dGVyIiwiYXVkIjoiQ3Vyc29GbHV0dGVyIn0.0hcoEVR3jNzA4lSZGB_4IdOM10M6xIgWTUChX_TqqMA"
+    }
+}
