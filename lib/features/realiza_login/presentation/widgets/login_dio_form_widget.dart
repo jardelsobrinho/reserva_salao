@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:reserva_salao/core/routes.dart';
 
 class LoginDioFormWidget extends StatelessWidget {
   final String assetName = 'assets/hat-svgrepo-com.svg';
@@ -8,9 +10,9 @@ class LoginDioFormWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Widget svg = SvgPicture.asset(
-      assetName,
-      width: 200,
+    final Widget svg = Image.network(
+      "https://hermes.digitalinnovation.one/assets/diome/logo.png",
+      width: 350,
     );
 
     return Column(
@@ -44,7 +46,9 @@ class LoginDioFormWidget extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              ElevatedButton(onPressed: () {}, child: const Text("Entrar"))
+              ElevatedButton(onPressed: () {
+                context.go("/agendamento/1");
+              }, child: const Text("Entrar"))
             ],
           ),
         )

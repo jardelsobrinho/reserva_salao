@@ -19,7 +19,7 @@ class ThemeCustom {
 
   static ThemeData getThemeLight() {
     final colorSchemeLigth = ColorScheme.fromSeed(
-      seedColor: Colors.white,
+      seedColor: Colors.blue,
       brightness: Brightness.light,
     );
 
@@ -52,7 +52,7 @@ class ThemeCustom {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           textStyle: const TextStyle(
-            fontSize: 14,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
           backgroundColor: Colors.purple,
