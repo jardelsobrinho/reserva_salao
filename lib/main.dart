@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:reserva_salao/core/theme.dart';
-import 'package:reserva_salao/features/agendamento/presentation/agendamento_page.dart';
-import 'package:reserva_salao/features/realiza_login/presentation/login_dio_page.dart';
 import 'core/routes.dart';
 
 void main() {
@@ -20,9 +17,7 @@ class MyApp extends StatelessWidget {
       routerConfig: router,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      //themeMode: ThemeMode.dark,
-      //theme: ThemeCustom.getThemeLight(),
-      //darkTheme: ThemeCustom.getThemeDark(),
+      themeMode: ThemeMode.dark
     );
   }
 }
