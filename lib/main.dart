@@ -1,8 +1,32 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 import 'core/routes.dart';
 
+final Logger _logger = Logger();
+
 void main() {
-  runApp(const MyApp());
+
+  FlutterError.onError = (FlutterErrorDetails details) {
+    _logger.e(
+      "Flutter Error",
+      error: details.exception,
+      stackTrace: details.stack,
+    );
+  };
+
+  runZonedGuarded(() {
+    runApp(const MyApp());
+  }, (error, stackTrace) {
+    _logger.e(
+      "Uncaught Error",
+      error: error,
+      stackTrace: stackTrace,
+    );
+  });
+
+
 }
 
 class MyApp extends StatelessWidget {
